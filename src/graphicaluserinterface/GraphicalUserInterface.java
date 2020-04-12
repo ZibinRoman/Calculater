@@ -1,6 +1,3 @@
-/**
- * 
- */
 package graphicaluserinterface;
 
 import java.awt.EventQueue;
