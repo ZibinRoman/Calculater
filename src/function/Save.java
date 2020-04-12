@@ -1,6 +1,3 @@
-/**
- * 
- */
 package function;
 
 import java.io.*;

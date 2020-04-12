@@ -57,7 +57,7 @@ public class Function extends Values {
 		} catch (Exception ex) {
 			// TODO: handle exception
 			logp(INFO, getClassName(Function.class), "clear", ex.getMessage());
-			errorMessage("ќшибка очистки списков!");
+			errorMessage("Ошибка очистки списков!");
 		}
 	}
 	
@@ -75,8 +75,8 @@ public class Function extends Values {
 		} catch (Exception ex) {
 			// TODO: handle exception
 			setError(true);
-			logp(INFO, getClassName(Function.class), "setArrayList", "¬ведите корректные значени¤!");
-			errorMessage("¬ведите корректные значени¤!");
+			logp(INFO, getClassName(Function.class), "setArrayList", "Введите корректные значения!");
+			errorMessage("Введите корректные значения!");
 		}
 	}
 	
@@ -84,7 +84,7 @@ public class Function extends Values {
 		// TODO Auto-generated method stub
 		if (isError()) {
 			setError(false);
-			logp(INFO, getClassName(Function.class), "check", "ќбнуление ошибки");
+			logp(INFO, getClassName(Function.class), "check", "Обнуление ошибки");
 		}
 	}
 
