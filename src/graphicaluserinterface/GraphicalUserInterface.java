@@ -4,11 +4,9 @@ import java.awt.EventQueue;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.LineBorder;
-
 import database.Library;
 import function.Function;
 import function.Save;
-
 import java.awt.Color;
 import javax.swing.JLabel;
 import java.awt.GridBagLayout;
@@ -29,7 +27,6 @@ import javax.swing.JMenu;
 import javax.swing.JMenuItem;
 import javax.swing.JSeparator;
 import java.awt.Font;
-
 import static function.Function.*;
 import static javax.swing.JOptionPane.*;
 import static database.Strings.*;
