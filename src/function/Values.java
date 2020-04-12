@@ -1,12 +1,14 @@
 package function;
 
 import java.util.ArrayList;
+
 /**
 * @author 18130166
 */
+
 public class Values {
 
-private static ArrayList<Boolean> a0 = new ArrayList<Boolean>();	//	"Коллекция получателей va"			
+private static ArrayList<Boolean> a0 = new ArrayList<Boolean>();	//	"Коллекция переключателей va"			
 private static ArrayList<Double>  a1 = new ArrayList<Double>();		//	"Коллекция тарифы все vb"				
 private static ArrayList<Double>  a2 = new ArrayList<Double>();		//	"Коллекция вводимых значений vc"		
 private static ArrayList<Double>  a3 = new ArrayList<Double>();		//	"Коллекция итого ve"					
@@ -15,7 +17,7 @@ private static ArrayList<Double>  b1 = new ArrayList<Double>();		//	"Коллекция т
 private static ArrayList<Double>  b2 = new ArrayList<Double>();		//	"Коллекция значения электричество eb"	
 private static ArrayList<Double>  b3 = new ArrayList<Double>();		//	"Коллекция итого электричество ec"	
 private static ArrayList<String>  b4 = new ArrayList<String>();		//	"Коллекция вывод электричество ef"	
-private static double value;										//	"Итог"								
+private static double value;										//	"Итог"
 
 /**
  * @return the a0
