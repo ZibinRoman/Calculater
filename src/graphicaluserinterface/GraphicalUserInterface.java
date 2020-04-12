@@ -50,12 +50,12 @@ public class GraphicalUserInterface {
 	private JTextField textField_4;
 	private boolean err = false;
 
-	private ArrayList<JCheckBox> vd = new ArrayList<JCheckBox>();//Коллекция JCheckBox
-	private ArrayList<JTextField> vt = new ArrayList<JTextField>();//Коллекция JCheckBox
-	private ArrayList<JTextField> et = new ArrayList<JTextField>();//Коллекция JCheckBox
-	private ArrayList<JLabel> vl = new ArrayList<JLabel>();//Коллекция JCheckBox
-	private ArrayList<JLabel> el = new ArrayList<JLabel>();//Коллекция JCheckBox
-	private ArrayList<JRadioButton> er = new ArrayList<JRadioButton>();//Коллекция JCheckBox
+	private ArrayList<JCheckBox> vd = new ArrayList<JCheckBox>();
+	private ArrayList<JTextField> vt = new ArrayList<JTextField>();
+	private ArrayList<JTextField> et = new ArrayList<JTextField>();
+	private ArrayList<JLabel> vl = new ArrayList<JLabel>();
+	private ArrayList<JLabel> el = new ArrayList<JLabel>();
+	private ArrayList<JRadioButton> er = new ArrayList<JRadioButton>();
 	
 	private JButton btnNewButton_1;
 	private JButton btnNewButton_0;
