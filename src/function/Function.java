@@ -57,7 +57,7 @@ public class Function extends Values {
 		} catch (Exception ex) {
 			// TODO: handle exception
 			logp(INFO, getClassName(Function.class), "clear", ex.getMessage());
-			errorMessage("Ошибка очистки списков!");
+			errorMessage("СњС€РёР±РєР° РѕС‡РёСЃС‚РєРё СЃРїРёСЃРєРѕРІ!");
 		}
 	}
 	
@@ -75,8 +75,8 @@ public class Function extends Values {
 		} catch (Exception ex) {
 			// TODO: handle exception
 			setError(true);
-			logp(INFO, getClassName(Function.class), "setArrayList", "Введите корректные значения!");
-			errorMessage("Введите корректные значения!");
+			logp(INFO, getClassName(Function.class), "setArrayList", "В¬РІРµРґРёС‚Рµ РєРѕСЂСЂРµРєС‚РЅС‹Рµ Р·РЅР°С‡РµРЅРёВ¤!");
+			errorMessage("В¬РІРµРґРёС‚Рµ РєРѕСЂСЂРµРєС‚РЅС‹Рµ Р·РЅР°С‡РµРЅРёВ¤!");
 		}
 	}
 	
@@ -84,7 +84,7 @@ public class Function extends Values {
 		// TODO Auto-generated method stub
 		if (isError()) {
 			setError(false);
-			logp(INFO, getClassName(Function.class), "check", "Обнуление ошибки");
+			logp(INFO, getClassName(Function.class), "check", "СњР±РЅСѓР»РµРЅРёРµ РѕС€РёР±РєРё");
 		}
 	}
 
