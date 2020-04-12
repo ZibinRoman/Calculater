@@ -6,16 +6,16 @@ import java.util.ArrayList;
 */
 public class Values {
 
-private static ArrayList<Boolean> a0 = new ArrayList<Boolean>();	//��������� �������������� va
-private static ArrayList<Double>  a1 = new ArrayList<Double>();		//��������� ������ ��� vb
-private static ArrayList<Double>  a2 = new ArrayList<Double>();		//��������� �������� �������� vc
-private static ArrayList<Double>  a3 = new ArrayList<Double>();		//��������� ����� ve
-private static ArrayList<String>  a4 = new ArrayList<String>();		//��������� ������ vf
-private static ArrayList<Double>  b1 = new ArrayList<Double>();		//��������� ������ ������������� ea
-private static ArrayList<Double>  b2 = new ArrayList<Double>();		//��������� �������� ������������� eb
-private static ArrayList<Double>  b3 = new ArrayList<Double>();		//��������� ����� ������������� ec
-private static ArrayList<String>  b4 = new ArrayList<String>();		//��������� ����� ������������� ef
-private static double value;										//����								
+private static ArrayList<Boolean> a0 = new ArrayList<Boolean>();	//РљРѕР»Р»РµРєС†РёСЏ РїРµСЂРµРєР»СЋС‡Р°С‚РµР»РµР№ va
+private static ArrayList<Double>  a1 = new ArrayList<Double>();		//РљРѕР»Р»РµРєС†РёСЏ С‚Р°СЂРёС„С‹ РІСЃРµ vb
+private static ArrayList<Double>  a2 = new ArrayList<Double>();		//РљРѕР»Р»РµРєС†РёСЏ РІРІРѕРґРёРјС‹С… Р·РЅР°С‡РµРЅРёР№ vc
+private static ArrayList<Double>  a3 = new ArrayList<Double>();		//РљРѕР»Р»РµРєС†РёСЏ РёС‚РѕРіРѕ ve
+private static ArrayList<String>  a4 = new ArrayList<String>();		//РљРѕР»Р»РµРєС†РёСЏ РІС‹РІРѕРґР° vf
+private static ArrayList<Double>  b1 = new ArrayList<Double>();		//РљРѕР»Р»РµРєС†РёСЏ С‚Р°СЂРёС„С‹ СЌР»РµРєС‚СЂРёС‡РµСЃС‚РІРѕ ea
+private static ArrayList<Double>  b2 = new ArrayList<Double>();		//РљРѕР»Р»РµРєС†РёСЏ Р·РЅР°С‡РµРЅРёСЏ СЌР»РµРєС‚СЂРёС‡РµСЃС‚РІРѕ eb
+private static ArrayList<Double>  b3 = new ArrayList<Double>();		//РљРѕР»Р»РµРєС†РёСЏ РёС‚РѕРіРѕ СЌР»РµРєС‚СЂРёС‡РµСЃС‚РІРѕ ec
+private static ArrayList<String>  b4 = new ArrayList<String>();		//РљРѕР»Р»РµРєС†РёСЏ РІС‹РІРѕРґ СЌР»РµРєС‚СЂРёС‡РµСЃС‚РІРѕ ef
+private static double value;										//Р�С‚РѕРі							
 
 /**
  * @return the a0
@@ -145,4 +145,4 @@ private static double value;										//����
 	}
 }
 
-//����� 
+//Р С”Р С•Р Р…Р ВµРЎвЂ 
