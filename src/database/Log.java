@@ -1,6 +1,3 @@
-/**
- * 
- */
 package database;
 
 import java.util.logging.Level;
