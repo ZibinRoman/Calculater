@@ -571,7 +571,7 @@ public class GraphicalUserInterface {
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				// TODO: handle exception
-				logp(INFO, getClassName(GraphicalUserInterface.class), "actionPerformed", "Выбор всех");
+				logp(INFO, getClassName(GraphicalUserInterface.class), "actionPerformed", "Р’С‹Р±РѕСЂ РІСЃРµС…");
 				for (JCheckBox v : vd) {
 					v.setSelected(get(true));
 				}
@@ -897,10 +897,10 @@ public class GraphicalUserInterface {
 		char n = e.getKeyChar();
 		if (!Character.isDigit(n) && n != 8 && n != 46)
 		{
-			logp(INFO, getClassName(GraphicalUserInterface.class), "event", "Вы ввели не числовое значение".concat(textField.getText()));
+			logp(INFO, getClassName(GraphicalUserInterface.class), "event", "Р’С‹ РІРІРµР»Рё РЅРµ С‡РёСЃР»РѕРІРѕРµ Р·РЅР°С‡РµРЅРёРµ".concat(textField.getText()));
 			textField.setEditable(false);
 		}else {
-			logp(INFO, getClassName(GraphicalUserInterface.class), "event", "Вы ввели числовое значение".concat(textField.getText()));
+			logp(INFO, getClassName(GraphicalUserInterface.class), "event", "Р’С‹ РІРІРµР»Рё С‡РёСЃР»РѕРІРѕРµ Р·РЅР°С‡РµРЅРёРµ".concat(textField.getText()));
 			textField.setEditable(true);
 		}
 	}
@@ -977,7 +977,7 @@ public class GraphicalUserInterface {
 	
 	private void dialogExit() {
 		// TODO Auto-generated method stub
-		int result = showConfirmDialog(frmRentCalc, "Вы действительно ходите выйти?", "Окно подтверждения", YES_NO_OPTION, QUESTION_MESSAGE);
+		int result = showConfirmDialog(frmRentCalc, "Р’С‹ РґРµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ С…РѕРґРёС‚Рµ РІС‹Р№С‚Рё?", "РћРєРЅРѕ РїРѕРґС‚РІРµСЂР¶РґРµРЅРёСЏ", YES_NO_OPTION, QUESTION_MESSAGE);
 		if (result == YES_OPTION) {
 			System.exit(0);
 		} else {
@@ -992,6 +992,6 @@ public class GraphicalUserInterface {
 	}
 	
 	private void dialogLicense() {
-		showMessageDialog(frmRentCalc, "Место для лицензии", "Лицензионное соглашение", INFORMATION_MESSAGE);
+		showMessageDialog(frmRentCalc, "РњРµСЃС‚Рѕ РґР»СЏ Р»РёС†РµРЅР·РёРё", "Р›РёС†РµРЅР·РёРѕРЅРЅРѕРµ СЃРѕРіР»Р°С€РµРЅРёРµ", INFORMATION_MESSAGE);
 	}
 }
