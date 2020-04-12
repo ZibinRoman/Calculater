@@ -17,8 +17,8 @@ private static ArrayList<Double>  b3 = new ArrayList<Double>();		//Коллекция ито
 private static ArrayList<String>  b4 = new ArrayList<String>();		//Коллекция вывод электричество ef
 private static double value;										//Итог
 /**
-* @return the a0
-*/
+ * @return the a0
+ */
 	public static ArrayList<Boolean> getA0() {
 		return a0;
 	}
@@ -82,42 +82,65 @@ private static double value;										//Итог
 	public static ArrayList<Double> getB1() {
 		return b1;
 	}
-	/**
-	* @param b1 the b1 to set
-	*/
-		public static void setB1(ArrayList<Double> b) {
-			b1 = b;
-		}
-	/**
-	* @return the b2
-	*/
-		public static ArrayList<Double> getB2() {
-			return b2;
-		}
-	/**
-	* @param b2 the b2 to set
-	*/
-		public static void setB2(ArrayList<Double> b) {
-			b2 = b;
-		}
-	/**
-	* @return the b3
-	*/
-		public static ArrayList<Double> getB3() {
-			return b3;
-		}
-	/**
-	* @param b3 the b3 to set
-	*/
-		public static void setB3(ArrayList<Double> b) {
-			b3 = b;
-		}
-	/**
-	* @return the b4
-	*/
-		public static ArrayList<String> getB4() {
-			return b4;
-		}
-	
+/**
+* @param b1 the b1 to set
+*/
+	public static void setB1(ArrayList<Double> b) {
+		b1 = b;
+	}
+/**
+* @return the b2
+*/
+	public static ArrayList<Double> getB2() {
+		return b2;
+	}
+/**
+* @param b2 the b2 to set
+*/
+	public static void setB2(ArrayList<Double> b) {
+		b2 = b;
+	}
+/**
+* @return the b3
+*/
+	public static ArrayList<Double> getB3() {
+		return b3;		}
+/**
+* @param b3 the b3 to set
+*/
+	public static void setB3(ArrayList<Double> b) {
+		b3 = b;
+	}
+/**
+* @return the b4
+*/
+	public static ArrayList<String> getB4() {
+		return b4;
+	}
+/**
+* @param b4 the b4 to set
+*/
+	public static void setB4(ArrayList<String> b) {
+		b4 = b;
+	}
+/**
+* @return the value
+*/
+	public static double getValue() {
+		return value;
+	}
+/**
+* @param value the value to set
+*/
+	public static void setValue(double a) {
+		value = a;
+	}
+/**
+* @param <E>
+* @param value the value to set
+*/
+	public static <E> void clearArray(ArrayList<E> A) {
+		A.clear();;
+	}
 }
 
