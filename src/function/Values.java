@@ -16,6 +16,7 @@ private static ArrayList<Double>  b2 = new ArrayList<Double>();		/*	Коллекция зн
 private static ArrayList<Double>  b3 = new ArrayList<Double>();		/*	Коллекция итого электричество ec	*/
 private static ArrayList<String>  b4 = new ArrayList<String>();		/*	Коллекция вывод электричество ef	*/
 private static double value;										/*	Итог								*/
+
 /**
  * @return the a0
  */
