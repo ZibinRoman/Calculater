@@ -97,7 +97,6 @@ class Test3 {
 		assertEquals(testValue,  testingValue);/*сравнение двух значений*/
 		assertTrue(testValue == testingValue);/*выполнение теста*/
 	}
-	
 }
 
 /**
