@@ -2,7 +2,7 @@
  * Пакет test
  */
 package test;
-/***
+/**
  * Статические импорты
  */
 import static org.junit.jupiter.api.Assertions.*;
