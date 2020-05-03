@@ -1,16 +1,12 @@
-/**
- * 
- */
 package main;
+
+import gui.Gui;
 
 public class Main {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		initialize();
+	Gui gui = new Gui();
+	gui.start();
 	}
 	
-	private static void initialize() {
-		// TODO Auto-generated method stub
-	}
 }
