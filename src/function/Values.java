@@ -1,146 +1,117 @@
 package function;
 
-import java.util.ArrayList;
-/**
-* @author 18130166
-*/
+import java.util.*;
+import javax.swing.*;
+
 public class Values {
+	
+	private ArrayList<Boolean> booleanList = new ArrayList<Boolean>();
+	private ArrayList<Double> doubleListTarif = new ArrayList<Double>();
+	private ArrayList<Double> doubleListValue = new ArrayList<Double>();
+	private ArrayList<Double> doubleListTotal = new ArrayList<Double>();
+	private ArrayList<String> stringList = new ArrayList<String>();
+	private ArrayList<Double> doubleListTarifEnergy = new ArrayList<Double>();
+	private ArrayList<Double> doubleListValueEnergy = new ArrayList<Double>();
+	private ArrayList<Double> doubleListTotalEnergy = new ArrayList<Double>();
+	private ArrayList<String> stringListEnergy = new ArrayList<String>();
+	private double value;
+	private int toggle;
+	
+	public Values(ArrayList<JCheckBox> checkBoxList, ArrayList<Double> doubleListValue,  ArrayList<Double> doubleListValueEnergy, int toggle) {
+		for (int i = 0; i < checkBoxList.size(); i++) {
+			this.getBooleanList().add(i, checkBoxList.get(i).isSelected());
+		}
+		this.setDoubleListValue(doubleListValue);
+		this.setDoubleListValueEnergy(doubleListValueEnergy);
+		this.setToggle(toggle);
+	}
+	
+	public ArrayList<Boolean> getBooleanList() {
+		return booleanList;
+	}
 
-private static ArrayList<Boolean> a0 = new ArrayList<Boolean>();	//Коллекция переключателей va
-private static ArrayList<Double>  a1 = new ArrayList<Double>();		//Коллекция тарифы все vb
-private static ArrayList<Double>  a2 = new ArrayList<Double>();		//Коллекция вводимых значений vc
-private static ArrayList<Double>  a3 = new ArrayList<Double>();		//Коллекция итого ve
-private static ArrayList<String>  a4 = new ArrayList<String>();		//Коллекция вывода vf
-private static ArrayList<Double>  b1 = new ArrayList<Double>();		//Коллекция тарифы электричество ea
-private static ArrayList<Double>  b2 = new ArrayList<Double>();		//Коллекция значения электричество eb
-private static ArrayList<Double>  b3 = new ArrayList<Double>();		//Коллекция итого электричество ec
-private static ArrayList<String>  b4 = new ArrayList<String>();		//Коллекция вывод электричество ef
-private static double value;										//Итог							
+	public void setBooleanList(ArrayList<Boolean> booleanList) {
+		this.booleanList = booleanList;
+	}
 
-/**
- * @return the a0
- */
-	public static ArrayList<Boolean> getA0() {
-		return a0;
+	public ArrayList<Double> getDoubleListTarif() {
+		return doubleListTarif;
 	}
-/**
-* @param a0 the a0 to set
-*/
-	public static void setA0(ArrayList<Boolean> a) {
-		a0 = a;
+
+	public void setDoubleListTarif(ArrayList<Double> doubleListTarif) {
+		this.doubleListTarif = doubleListTarif;
 	}
-/**
-* @return the a1
-*/
-	public static ArrayList<Double> getA1() {
-		return a1;
+
+	public ArrayList<Double> getDoubleListValue() {
+		return doubleListValue;
 	}
-/**
-* @param a1 the a1 to set
-*/
-	public static void setA1(ArrayList<Double> a) {
-		a1 = a;
+
+	public void setDoubleListValue(ArrayList<Double> doubleListValue) {
+		this.doubleListValue = doubleListValue;
 	}
-/**
-* @return the a2
-*/
-	public static ArrayList<Double> getA2() {
-		return a2;
+
+	public ArrayList<Double> getDoubleListTotal() {
+		return doubleListTotal;
 	}
-/**
-* @param a2 the a2 to set
-*/
-	public static void setA2(ArrayList<Double> a) {
-		a2 = a;
+
+	public void setDoubleListTotal(ArrayList<Double> doubleListTotal) {
+		this.doubleListTotal = doubleListTotal;
 	}
-/**
-* @return the a3
-*/
-	public static ArrayList<Double> getA3() {
-		return a3;
+
+	public ArrayList<String> getStringList() {
+		return stringList;
 	}
-/**
-* @param a3 the a3 to set
-*/
-	public static void setA3(ArrayList<Double> a) {
-		a3 = a;
+
+	public void setStringList(ArrayList<String> stringList) {
+		this.stringList = stringList;
 	}
-/**
-* @return the a4
-*/
-	public static ArrayList<String> getA4() {
-		return a4;
+
+	public ArrayList<Double> getDoubleListTarifEnergy() {
+		return doubleListTarifEnergy;
 	}
-/**
-* @param a4 the a4 to set
-*/
-	public static void setA4(ArrayList<String> a) {
-		a4 = a;
+
+	public void setDoubleListTarifEnergy(ArrayList<Double> doubleListTarifEnergy) {
+		this.doubleListTarifEnergy = doubleListTarifEnergy;
 	}
-/**
-* @return the b1
-*/
-	public static ArrayList<Double> getB1() {
-		return b1;
+
+	public ArrayList<Double> getDoubleListValueEnergy() {
+		return doubleListValueEnergy;
 	}
-/**
-* @param b1 the b1 to set
-*/
-	public static void setB1(ArrayList<Double> b) {
-		b1 = b;
+
+	public void setDoubleListValueEnergy(ArrayList<Double> doubleListValueEnergy) {
+		this.doubleListValueEnergy = doubleListValueEnergy;
 	}
-/**
-* @return the b2
-*/
-	public static ArrayList<Double> getB2() {
-		return b2;
+
+	public ArrayList<Double> getDoubleListTotalEnergy() {
+		return doubleListTotalEnergy;
 	}
-/**
-* @param b2 the b2 to set
-*/
-	public static void setB2(ArrayList<Double> b) {
-		b2 = b;
+
+	public void setDoubleListTotalEnergy(ArrayList<Double> doubleListTotalEnergy) {
+		this.doubleListTotalEnergy = doubleListTotalEnergy;
 	}
-/**
-* @return the b3
-*/
-	public static ArrayList<Double> getB3() {
-		return b3;		}
-/**
-* @param b3 the b3 to set
-*/
-	public static void setB3(ArrayList<Double> b) {
-		b3 = b;
+
+	public ArrayList<String> getStringListEnergy() {
+		return stringListEnergy;
 	}
-/**
-* @return the b4
-*/
-	public static ArrayList<String> getB4() {
-		return b4;
+
+	public void setStringListEnergy(ArrayList<String> stringListEnergy) {
+		this.stringListEnergy = stringListEnergy;
 	}
-/**
-* @param b4 the b4 to set
-*/
-	public static void setB4(ArrayList<String> b) {
-		b4 = b;
-	}
-/**
-* @return the value
-*/
-	public static double getValue() {
+
+	public double getValue() {
 		return value;
 	}
-/**
-* @param value the value to set
-*/
-	public static void setValue(double a) {
-		value = a;
+
+	public void setValue(double value) {
+		this.value = value;
 	}
-/**
-* @param <E>
-* @param value the value to set
-*/
-	public static <E> void clearArray(ArrayList<E> A) {
-		A.clear();;
+
+	public int getToggle() {
+		return toggle;
 	}
+
+	public void setToggle(int toggle) {
+		this.toggle = toggle;
+	}
+	
 }
