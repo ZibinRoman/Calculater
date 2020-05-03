@@ -1,7 +1,9 @@
 os: windows
 language: java
 
-jdk:
+jdk: oraclejdk8
 
--oraclejdk8
+branches:
+    only:
+    - master
 script: mvn test -B
