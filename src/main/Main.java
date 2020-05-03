@@ -1,23 +1,12 @@
 package main;
 
-import graphicaluserinterface.GraphicalUserInterface;
+import gui.Gui;
 
-/**
- * @author Roman
- *
- */
 public class Main {
 
-	/**
-	 * @param args
-	 */
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		initialize();
+	Gui gui = new Gui();
+	gui.start();
 	}
 	
-	private static void initialize() {
-		// TODO Auto-generated method stub
-		GraphicalUserInterface.start();
-	}
 }
