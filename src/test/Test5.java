@@ -1,19 +1,4 @@
 /**
- * РџР°РєРµС‚ test
- */
-package test;
-/****
- * РЎС‚Р°С‚РёС‡РµСЃРєРёРµ РёРјРїРѕСЂС‚С‹
- */
-import static org.junit.jupiter.api.Assertions.*;
-/**
- * Р�РјРїРѕСЂС‚С‹
- */
-import java.math.*;
-import java.util.*;
-import javax.swing.*;
-import org.junit.jupiter.api.Test;
-/**
  * Пакет test
  */
 package test;
