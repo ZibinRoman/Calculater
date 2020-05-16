@@ -1,51 +1,66 @@
+/**
+ * пакет database;
+ * */
 package database;
-
+/**
+ * импортируем все необходимое для класса
+ * */
 import static java.lang.String.*;
 import static database.Strings.*;
-
 import java.io.*;
 import java.util.*;
 import javax.swing.*;
-
 import function.*;
-
+/**
+ * класс для заполнения платежной квитанции в файл Output.txt
+ * */
 public class Output extends Values{
 
 	public Output(ArrayList<JCheckBox> checkBoxList, ArrayList<Double> doubleListTarif, ArrayList<Double> doubleListValue, ArrayList<Double> doubleListTotal, ArrayList<Double> doubleListTarifEnergy, ArrayList<Double> doubleListValueEnergy, ArrayList<Double> doubleListTotalEnergy, int toggle, double value) {
 		super(checkBoxList, doubleListValue, doubleListValueEnergy, toggle);
-		this.setDoubleListTarif(doubleListTarif);
-		this.setDoubleListTotal(doubleListTotal);
-		this.setDoubleListTarifEnergy(doubleListTarifEnergy);
-		this.setDoubleListTotalEnergy(doubleListTotalEnergy);
-		this.setValue(value);
+		this.setDoubleListTarif(doubleListTarif);// инициализация переменных для вывода в файл
+		this.setDoubleListTotal(doubleListTotal);// инициализация переменных для вывода в файл
+		this.setDoubleListTarifEnergy(doubleListTarifEnergy);// инициализация переменных для вывода в файл
+		this.setDoubleListTotalEnergy(doubleListTotalEnergy);// инициализация переменных для вывода в файл
+		this.setValue(value);// инициализация переменных для вывода в файл
 	}
-	
+	/**
+	 * построчный вывод в файл Output.txt
+	 * */
 	public void initializeOutput() {
 		try {
 			initializeList(getStringList(), getStringListEnergy(), getToggle());
 			BufferedWriter bufferedwriter = new BufferedWriter(new FileWriter(getPathtooutput()));
 			for (int i = 0; i < getStringList().size(); i++) {
-				bufferedwriter.write(getWrite(valueOf(getDoubleListTarif().get(i)), valueOf(getDoubleListValue().get(i)), valueOf(getDoubleListTotal().get(i)), getStringList().get(i)));
-				bufferedwriter.newLine();
+				bufferedwriter.write(getWrite(valueOf(getDoubleListTarif().get(i)), valueOf(getDoubleListValue().get(i)), valueOf(getDoubleListTotal().get(i)), getStringList().get(i)));//Записывает
+				bufferedwriter.newLine();//Записывает разделитель строк
 			}
 			for (int i = 0; i < getStringListEnergy().size(); i++) {
-				bufferedwriter.write(getWrite(valueOf(getDoubleListTarifEnergy().get(i)), valueOf(getDoubleListValueEnergy().get(i)), valueOf(getDoubleListTotalEnergy().get(i)), getStringListEnergy().get(i)));
-				bufferedwriter.newLine();
+				bufferedwriter.write(getWrite(valueOf(getDoubleListTarifEnergy().get(i)), valueOf(getDoubleListValueEnergy().get(i)), valueOf(getDoubleListTotalEnergy().get(i)), getStringListEnergy().get(i)));//Записывает 
+				bufferedwriter.newLine();//Записывает разделитель строк
 			}
-			bufferedwriter.write(join(getEmpty(), format(getFormat80(), String.join(getSpace(), Strings.getTotal(), "к", "оплате".concat(getColon()))),  format(getFormat10(), valueOf(getValue()))));
-			bufferedwriter.newLine();
-			bufferedwriter.write(join(getEmpty(), String.format(getFormat80(),  Strings.getTimer().concat(getColon())), format(getFormat30(), getDate())));
-			bufferedwriter.close();
+			bufferedwriter.write(join(getEmpty(), format(getFormat80(), String.join(getSpace(), Strings.getTotal(), "к", "оплате".concat(getColon()))),  format(getFormat10(), valueOf(getValue()))));//Записывает
+			bufferedwriter.newLine();//Записывает разделитель строк
+			bufferedwriter.write(join(getEmpty(), String.format(getFormat80(),  Strings.getTimer().concat(getColon())), format(getFormat30(), getDate())));//Записывает
+			bufferedwriter.close();//Закрывает буфер
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
 	}
-	
+	/**
+	 * getDate() берет системную дату
+	 * и преобразует ее в строку для вывода 
+	 * в документ Output.txt
+	 * */
 	private static String getDate() {
 		Date date = new Date();
 		return date.toString();
 	}
-	
+	/**
+	 * объединяет переменные с разделителем пусто ""
+	 * и записывает в переменную 
+	 * для последующего вывода в документ
+	 * */
 	private String getWrite(String doubleListTarif, String doubleListValue, String doubleListTotal, String stringList) {
 		String string0 = format(getFormat80(), stringList);
 		String string1 = join(getEmpty(), format(getFormat10(), Strings.getTarif().concat(getColon())), format(getFormat10(), doubleListTarif));
@@ -53,9 +68,15 @@ public class Output extends Values{
 		String string3 = join(getEmpty(), format(getFormat10(), Strings.getTotal().concat(getColon())), format(getFormat10(), doubleListTotal));
 		return join(getEmpty(),  string0, string1, string2, string3);
 	}
-	
+	/**
+	 * строки для заполнения 
+	 * документа - платежной квитанции
+	 * */
 	private void initializeList(ArrayList<String> stringList, ArrayList<String> stringListEnergy, int toggle) {
 		try {
+			/**
+			 * названия тарифов
+			 * */
 			stringList.clear();
 			stringListEnergy.clear();
 			stringList.add(0, "Содержание");
@@ -78,13 +99,22 @@ public class Output extends Values{
 			stringList.add(17, "Радио");
 			stringList.add(18, "Газ");
 			switch (toggle) {
+			/**
+			 * тарифная зона 1
+			 * */
 			case 1:
 				stringListEnergy.add(0, "Электроэнергия Одноставочный тариф");
 				break;
+			/**
+			 * тарифная зона 1
+			 * */
 			case 2:
 				stringListEnergy.add(0, "Электроэнергия. Дневная зона");
 				stringListEnergy.add(1, "Электроэнергия. Ночная зона");
 				break;
+			/**
+			 * тарифная зона 1
+			 * */
 			case 3:
 				stringListEnergy.add(0, "Электроэнергия. Пиковая зона");
 				stringListEnergy.add(1, "Электроэнергия. Полупиковая зона");
@@ -96,9 +126,5 @@ public class Output extends Values{
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		
-
 	}
-	
-
 }
