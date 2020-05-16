@@ -1,5 +1,10 @@
+/**
+ * пакет database;
+ * */
 package database;
-
+/**
+ * хранит все строковые значения
+ * */
 public class Strings {
 	
 	private static final String space = " ";
@@ -7,12 +12,14 @@ public class Strings {
 	private static final String zero = "0";
 	private static final String semicolon = ";";
 	private static final String colon = ":";
-	private static final String pathToInput = "src/database/Input.txt";
-	private static final String pathToOutput = "Output.txt";
-	private static final String pathToInputEnergyFase1 = "src/database/InputEnergyFase1.txt";
-	private static final String pathToInputEnergyFase2 = "src/database/InputEnergyFase2.txt";
-	private static final String pathToInputEnergyFase3 = "src/database/InputEnergyFase3.txt";
-	
+	private static final String pathToInput = "src/database/Input.txt";//путь к файлу с тарифами
+	private static final String pathToOutput = "Output.txt";//путь к файлу вывода
+	private static final String pathToInputEnergyFase1 = "src/database/InputEnergyFase1.txt";//путь к файлу с тарифом энергии тарифная зона 1
+	private static final String pathToInputEnergyFase2 = "src/database/InputEnergyFase2.txt";//путь к файлу с тарифом энергии тарифная зона 2
+	private static final String pathToInputEnergyFase3 = "src/database/InputEnergyFase3.txt";//путь к файлу с тарифом энергии тарифная зона 3
+	/**
+	 * для вывода в файл
+	 * */
 	private static final String tarif = "Тариф";
 	private static final String value = "Значения";
 	private static final String total = "Итого";
@@ -21,6 +28,9 @@ public class Strings {
 	private static final String format10 = "|%10s|";
 	private static final String format30 = "|%30s|";
 	private static final String format80 = "|%80s|";
+	/**
+	 * получить значения переменных (↓17 штук)
+	 * */
 	public static String getSpace() {
 		return space;
 	}

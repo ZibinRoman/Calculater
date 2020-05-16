@@ -1,24 +1,42 @@
+/**
+ * пакет database;
+ * */
 package database;
-
+/**
+ * импортируем все необходимое для класса
+ * */
 import java.util.*;
-
+/**
+ * класс хранит подписи (названия) 
+ * к элементам интерфейса 
+ * */
 public class GuiStrings {
-	
-	private final String title = "Расчет кварплаты";
-	private final String total = "Итого";
-	private final String calc = "Рассчитать ";
-	private final String all = "Все услуги";
-	private final String save = "Сохранить";
-	private ArrayList<String> checkBoxListText = new ArrayList<String>();
-	private ArrayList<String> panelListText = new ArrayList<String>();
-	private ArrayList<String> ListText = new ArrayList<String>();
-	private ArrayList<String> ListTextEnergy = new ArrayList<String>();
-	private ArrayList<String> labelListTextEnergy = new ArrayList<String>();
+	/**
+	 * класс хранит подписи (названия) 
+	 * к элементам интерфейса:
+	 * CheckBox;  Panel; Textbox ; RadioBox
+	 * */
+	private final String title = "Расчет кварплаты";//название окнакнопки
+	private final String total = "Итого";//подписсь к полю вывода
+	private final String calc = "Рассчитать ";//название кнопки
+	private final String all = "Все услуги";//название кнопки
+	private final String save = "Сохранить";//название кнопки
+	private ArrayList<String> checkBoxListText = new ArrayList<String>();//значение коллекции
+	private ArrayList<String> panelListText = new ArrayList<String>();//значение коллекции
+	private ArrayList<String> ListText = new ArrayList<String>();//значение коллекции
+	private ArrayList<String> ListTextEnergy = new ArrayList<String>();//значение коллекции
+	private ArrayList<String> labelListTextEnergy = new ArrayList<String>();//значение коллекции
 	
 	public GuiStrings() {
 		initialize();
 	}
-	
+	/**
+	 * хранит подписи (названия) 
+	 * к элементам интерфейса:
+	 * поля ввода, переключатели, флажки
+	 * CheckBox; Textbox; RadioBox
+	 * */
+
 	private void initialize() {
 		getCheckBoxListText().add(0, "Содержание");
 		getCheckBoxListText().add(1, "Уб. мест общ. польз.");
@@ -56,63 +74,93 @@ public class GuiStrings {
 		getLabelListTextEnergy().add(1, "Тарифная зона 2");
 		getLabelListTextEnergy().add(2, "Тарифная зона 3");
 	}
-
+	/**
+	 * метод, которыйт получает значение переменной
+	 * */
 	public String getTitle() {
 		return title;
 	}
-
+	/**
+	 * метод, которыйт получает значение переменной
+	 * */
 	public ArrayList<String> getCheckBoxListText() {
 		return checkBoxListText;
 	}
-
+	/**
+	 * метод, которыйт записывает значение переменной
+	 * */
 	public void setCheckBoxListText(ArrayList<String> checkBoxListText) {
 		this.checkBoxListText = checkBoxListText;
 	}
-
+	/**
+	 * метод, которыйт получает значение переменной
+	 * */
 	public ArrayList<String> getPanelListText() {
 		return panelListText;
 	}
-
+	/**
+	 * метод, которыйт записывает значение переменной
+	 * */
 	public void setPanelListText(ArrayList<String> panelListText) {
 		this.panelListText = panelListText;
 	}
-
+	/**
+	 * метод, которыйт получает значение переменной
+	 * */
 	public ArrayList<String> getListText() {
 		return ListText;
 	}
-
+	/**
+	 * метод, которыйт записывает значение переменной
+	 * */
 	public void setListText(ArrayList<String> listText) {
 		ListText = listText;
 	}
-
+	/**
+	 * метод, которыйт получает значение переменной
+	 * */
 	public ArrayList<String> getListTextEnergy() {
 		return ListTextEnergy;
 	}
-
+	/**
+	 * метод, которыйт записывает значение переменной
+	 * */
 	public void setListTextEnergy(ArrayList<String> listTextEnergy) {
 		ListTextEnergy = listTextEnergy;
 	}
-
+	/**
+	 * метод, которыйт получает значение переменной
+	 * */
 	public ArrayList<String> getLabelListTextEnergy() {
 		return labelListTextEnergy;
 	}
-
+	/**
+	 * метод, которыйт записывает значение переменной
+	 * */
 	public void setLabelListTextEnergy(ArrayList<String> labelListTextEnergy) {
 		this.labelListTextEnergy = labelListTextEnergy;
 	}
-
+	/**
+	 * метод, которыйт получает значение переменной
+	 * */
 	public String getTotal() {
 		return total;
 	}
-
+	/**
+	 * метод, которыйт получает значение переменной
+	 * */
 	public String getCalc() {
 		return calc;
 	}
-
+	/**
+	 * метод, которыйт получает значение переменной
+	 * */
 	public String getAll() {
 		return all;
 	}
-
+	/**
+	 * метод, которыйт получает значение переменной
+	 * */
 	public String getSave() {
 		return save;
 	}
