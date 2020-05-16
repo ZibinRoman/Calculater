@@ -126,9 +126,5 @@ public class Output extends Values{
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		
-
 	}
-	
-
 }
