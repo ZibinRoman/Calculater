@@ -5,4 +5,8 @@ jdk: openjdk8
 branches:
     only:
     - master
+    - Roman
+    - 18130166
+    - Arslan
+    - Evgeniy
 script: mvn test -B
