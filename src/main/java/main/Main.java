@@ -22,4 +22,5 @@ public class Main {
 	Gui gui = new Gui();//вызов Gui 
 	gui.start();//запуск gui
 	}
+	
 }
