@@ -16,7 +16,7 @@ public class Strings {
 	private static final String pathToOutput = "Output.txt";//путь к файлу вывода
 	private static final String pathToInputEnergyFase1 = "src/main/java/database/InputEnergyFase1.txt";//путь к файлу с тарифом энергии тарифная зона 1
 	private static final String pathToInputEnergyFase2 = "src/main/java/database/InputEnergyFase2.txt";//путь к файлу с тарифом энергии тарифная зона 2
-	private static final String pathToInputEnergyFase3 = "src//main/java/database/InputEnergyFase3.txt";//путь к файлу с тарифом энергии тарифная зона 3
+	private static final String pathToInputEnergyFase3 = "src/main/java/database/InputEnergyFase3.txt";//путь к файлу с тарифом энергии тарифная зона 3
 	/**
 	 * для вывода в файл
 	 * */
