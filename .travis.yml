@@ -5,4 +5,5 @@ jdk: openjdk8
 branches:
     only:
     - master
+    - Roman
 script: mvn test -B
