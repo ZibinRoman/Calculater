@@ -70,9 +70,9 @@ public class GuiStrings {
 		getListTextEnergy().add(0, "Одноставочный тариф");
 		getListTextEnergy().add(1, "Тариф по двум зонам");
 		getListTextEnergy().add(2, "Тариф по трем зонам");
-		getLabelListTextEnergy().add(0, "Тарифная зона 1");
-		getLabelListTextEnergy().add(1, "Тарифная зона 2");
-		getLabelListTextEnergy().add(2, "Тарифная зона 3");
+		getLabelListTextEnergy().add(0, "Тариф зона 1");
+		getLabelListTextEnergy().add(1, "Тариф зона 2");
+		getLabelListTextEnergy().add(2, "Тариф зона 3");
 	}
 	/**
 	 * метод, которыйт получает значение переменной
