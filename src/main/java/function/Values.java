@@ -7,7 +7,9 @@ package function;
  * */
 import java.util.*;
 import javax.swing.*;
-
+/**
+ * класс переменных
+ * */
 public class Values {
 	
 	private ArrayList<Boolean> booleanList = new ArrayList<Boolean>();//Коллекция состояний переключателей, на случай, если не нужно расчитать какой то тариф
@@ -162,5 +164,4 @@ public class Values {
 	public void setToggle(int toggle) {
 		this.toggle = toggle;
 	}
-	
 }
