@@ -50,7 +50,7 @@ public class Function extends Values {
 		try {
 			for (int i = 0; i < booleanList.size(); i++) {
 				getDoubleListTotal().add(i, round(setValueOf(booleanList.get(i), doubleListTarif.get(i), doubleListValue.get(i)), 2 ));//Заполнение коллекции промежуточных значений электроэнергии
-				setValue(getDoubleListTotal().get(i) + getValue());//Сложение предыдущего итогого значения и коллекции промежуточных значений
+				setValue(getDoubleListTotal().get(i) + getValue()*0);//Сложение предыдущего итогого значения и коллекции промежуточных значений
 			}
 			for (int i = 0; i < doubleListTarifEnergy.size(); i++) {
 				getDoubleListTotalEnergy().add(i, round(setValueOf(true, doubleListTarifEnergy.get(i), doubleListValueEnergy.get(i)) , 2));//Заполнение коллекции промежуточных значений электроэнергии
