@@ -59,6 +59,7 @@ public class Gui {
 		gridBagLayout.rowHeights = new int[]{10, 0, 0};//высота строки
 		gridBagLayout.columnWeights = new double[]{0.0, 1.0, 1.0, 1.0};//ширина колонок
 		gridBagLayout.rowWeights = new double[]{0.0, 1.0, Double.MIN_VALUE};//высота строки
+		frame.setBackground(Color.GREEN);
 		frame.getContentPane().setLayout(gridBagLayout);
 		/**
 		 * панель "Услуги"
