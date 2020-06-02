@@ -47,14 +47,8 @@
 				<useSystemClassLoader>false</useSystemClassLoader>
 				<skipTests>false</skipTests>
           			<includes>
-          				<include>**/Test.java</include>
-          				<include>**/Test1.java</include>
 	          			<include>**/Test2.java</include>
 			      		<include>**/Test3.java</include>
-			      		<include>**/Test4.java</include>
-	    		  		<include>**/Test5.java</include>
-	      				<include>**/Test6.java</include>
-	      				<include>**/Test7.java</include>
 	      			</includes>
 	    		</configuration>
 	    		<dependencies>
