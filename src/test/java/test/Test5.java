@@ -51,7 +51,7 @@ class Test5 {
 		 * Задание параметров:
 		 */
 		double area = 450.00;/*Площадь*/
-		int numberOfPersons = 4;/*Жильцы*/
+		int numberOfPersons = 2;/*Жильцы*/
 		double heating = 140.00;/*Отопление*/
 		double coldWater = 180.00;/*Холодная вода*/
 		double hotWater = 120.00;/*Горячая вода*/
