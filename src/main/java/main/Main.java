@@ -17,6 +17,7 @@ public class Main {
 	 * void означает, что метод ничего не возвращает. 
 	 * String[] args — это массив аргументов с которыми может запускаться программа. 
 	 * По умолчанию массив пуст.
+	 * 12
 	 * */
 	public static void main(String[] args) {
 	Gui gui = new Gui();//вызов Gui 
