@@ -26,7 +26,7 @@ class Test6 {
 	 * <br><i>Первый тест</i></br>
 	 * <h1>Вводимые значения:</h1>
 	 * @param Площадь = 280
-	 * @param Жильцы = 2
+	 * @param Жильцы = 
 	 * @param Отопление = 130
 	 * @param Холодная вода = 160
 	 * @param Горячая вода = 120
@@ -51,7 +51,7 @@ class Test6 {
 		 * Задание параметров:
 		 */
 		double area = 280.00;/*Площадь*/
-		int numberOfPersons = 2;/*Жильцы*/
+		int numberOfPersons = 3;/*Жильцы*/
 		double heating = 130.00;/*Отопление*/
 		double coldWater = 160.00;/*Холодная вода*/
 		double hotWater = 120.00;/*Горячая вода*/
